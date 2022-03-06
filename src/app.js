@@ -28,6 +28,34 @@ app.get('', (req, res) => {
     })
 })
 
+app.get('/weddings', (req, res) => {
+    res.render('weddings', {
+        title: 'Wedding Photography',
+        name: 'Andrew Barker'
+    })
+})
+
+app.get('/athome', (req, res) => {
+    res.render('athome', {
+        title: 'Photography at home',
+        name: 'Andrew Barker'
+    })
+})
+
+app.get('/pets', (req, res) => {
+    res.render('pets', {
+        title: 'Pet Photography',
+        name: 'Andrew Barker'
+    })
+})
+
+app.get('/landscape', (req, res) => {
+    res.render('landscape', {
+        title: 'Landscape Photography',
+        name: 'Andrew Barker'
+    })
+})
+
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About me',
